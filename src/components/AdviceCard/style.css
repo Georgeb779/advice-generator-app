@@ -1,0 +1,119 @@
+/*  - Mobile: 375px  mobile first */
+.advice-card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 375px;
+  width: calc(100% - 24px);
+  margin: 0 auto;
+  height: 95vh;
+}
+
+.advice-card__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--dark-grayish-blue);
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 260px;
+  -webkit-box-shadow: 0px 5px 5px -2px rgb(0 0 0 / 24%);
+  --moz-box-shadow: 0px 5px 5px -2px rgb(0 0 0 / 24%);
+  box-shadow: 0px 5px 5px -2px rgb(0 0 0 / 24%);
+}
+
+.advice-card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advice-card__header > .advice-card__title {
+  color: var(--neon-green);
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+.advice-card__body-text {
+  text-align: center;
+  color: var(--light-cyan);
+  font-size: 28px;
+  padding: 0 20px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.advice-card__random-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neon-green);
+  border: none;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: 46px;
+  cursor: pointer;
+}
+
+.advice-card__separation-line {
+  position: relative;
+  top: 30px;
+}
+
+.divider-desktop {
+  display: none;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.random-button.active {
+  animation: rotate infinite 1s;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  color: var(--light-cyan);
+  font-size: 16px;
+}
+.attribution a {
+  color: var(--neon-green);
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+/*  - Desktop: 1444px */
+@media (min-width: 1444px) {
+  .advice-card__random-btn {
+    top: 50px;
+  }
+  .advice-card__container {
+    max-width: 500px;
+  }
+  .advice-card__body-text {
+    padding: 0px 60px;
+  }
+  .advice-card__item {
+    min-height: 260px;
+  }
+  .divider-mobile {
+    display: none;
+  }
+  .divider-desktop {
+    display: block;
+  }
+  .attribution {
+    font-size: 20px;
+  }
+}
