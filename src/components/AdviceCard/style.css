@@ -6,7 +6,7 @@
   max-width: 375px;
   width: calc(100% - 24px);
   margin: 0 auto;
-  height: 95vh;
+  height: 90vh;
 }
 
 .advice-card__item {
@@ -115,5 +115,8 @@
   }
   .attribution {
     font-size: 20px;
+  }
+  .advice-card__container {
+    height: 95vh;
   }
 }
