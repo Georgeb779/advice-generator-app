@@ -6,7 +6,7 @@
   max-width: 375px;
   width: calc(100% - 24px);
   margin: 0 auto;
-  height: 90vh;
+  height: 95vh;
 }
 
 .advice-card__item {
@@ -86,6 +86,7 @@
   justify-content: center;
   color: var(--light-cyan);
   font-size: 16px;
+  margin: 10px 0;
 }
 .attribution a {
   color: var(--neon-green);
@@ -115,8 +116,5 @@
   }
   .attribution {
     font-size: 20px;
-  }
-  .advice-card__container {
-    height: 95vh;
   }
 }

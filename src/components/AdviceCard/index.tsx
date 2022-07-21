@@ -18,16 +18,21 @@ export default function AdviceCard() {
       <div className='advice-card__container'>
         <div className='advice-card__item'>
           <div className='advice-card__header'>
-            <h1 className='advice-card__title'>ADVICE #{info.id}</h1>
+            <h1 className='advice-card__title' role='advice-number'>
+              ADVICE #{info.id}
+            </h1>
           </div>
           <div className='advice-card__body'>
-            <p className='advice-card__body-text'>"{info.advice}"</p>
+            <p className='advice-card__body-text' role='advice'>
+              "{info.advice}"
+            </p>
           </div>
           <div className='advice-card__separation-line'>
             <DividerDesktop />
             <DividerMobile />
           </div>
           <button
+            role='change-advice'
             className='advice-card__random-btn'
             onClick={() => handleRandomButton(setRandomButton, setInfo)}
           >
@@ -36,7 +41,7 @@ export default function AdviceCard() {
         </div>
       </div>
 
-      <div className='attribution'>
+      <div className='attribution' role='footer'>
         Challenge by
         <a
           target='_blank'
