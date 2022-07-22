@@ -8,15 +8,23 @@
   --dark-blue: hsl(218, 23%, 16%);
 }
 
-html {
+html,
+body {
+  margin: 0;
   height: 100%;
 }
 
 body {
   font-family: "Barlow Condensed", sans-serif;
   background-color: var(--dark-blue);
-  min-height: 100%;
-  overflow: hidden;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
 
 input,

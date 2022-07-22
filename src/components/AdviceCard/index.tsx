@@ -15,6 +15,7 @@ export default function AdviceCard() {
 
   return (
     <>
+
       <div className='advice-card__container'>
         <div className='advice-card__item'>
           <div className='advice-card__header'>
@@ -40,8 +41,7 @@ export default function AdviceCard() {
           </button>
         </div>
       </div>
-
-      <div className='attribution' role='footer'>
+      <footer className='attribution'>
         Challenge by
         <a
           target='_blank'
@@ -59,7 +59,7 @@ export default function AdviceCard() {
           Georgeb779
         </a>
         .
-      </div>
+      </footer>
     </>
   );
 }
